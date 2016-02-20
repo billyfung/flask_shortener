@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+  <title>{% block title %}{% endblock %}</title>
+  <meta name="description" content="shortens URL">
+  <meta name="author" content="bfung">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+  <style type="text/css">
+    body {
+      background-color: #DADADA;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui teal image header">
+      <div class="content">
+        URL Shortener
+      </div>
+    </h2>
+    <div class="ui stackable container">  
+      {% block body %}{% endblock %}
+    </div>
+  </div>  
+</div>
+
+
+  <footer class="ui inverted grey footer segment">
+    <div class="ui center aligned container">
+      <div class="ui horizontal inverted small divided link list">
+        <div class="item"><a href='mailto:billy@billyfung.com?Subject=urlshortener'>Contact</a>
+        </div>
+        <div class="item">By <a href='http://billyfung.com' target="_blank">Billy</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+
+
+</body>
+</html>
