@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 {% block title %}Create New Short URL{% endblock %}
 {% block body %}
-  <form class="ui form" action="/shorten">
+  <form class="ui form" action="/shorten" method="post">
   <div class="field">
     <label>Input URL</label>
     <input type="text" name="input-url" placeholder="put your URL here">
-  </div>
+  </div> 
   <button class="ui button" type="submit">Submit</button>
 </form>
 {% endblock %}

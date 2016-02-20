@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Shortened!{% endblock %}
+{% block body %}
+  <form class="ui form" action="/shorten">
+  <div class="field">
+    <label>Shortened URL</label>
+    <input type="text" name="input-url" value="{{ short_id }}">
+  </div> 
+</form>
+{% endblock %}
