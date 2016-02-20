@@ -47,12 +47,12 @@ def return_shortened():
     return render_template('result.html', short_id=short_id)
 
 @app.route("/<short_id>")
-def redirect_to_long_url(short_id):
+def expand_to_long_url(short_id):
     link_target = redis.get('url-target:' + short_id)
     if link_target is None:
         raise NotFound()
     # self.redis.incr('click-count:' + short_id)
-    return redirect(url_for(link_target))
+    return redirect(link_target)
 
 if __name__ == '__main__':
     app.run()
