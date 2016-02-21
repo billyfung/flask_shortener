@@ -51,7 +51,7 @@ def expand_to_long_url(short_id):
     link_target = redis.get('url-target:' + short_id)
     if link_target is None:
         raise NotFound()
-    # self.redis.incr('click-count:' + short_id)
+    self.redis.incr('click-count:' + short_id)
     return redirect(link_target)
 
 if __name__ == '__main__':
