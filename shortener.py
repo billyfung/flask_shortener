@@ -6,8 +6,7 @@ import config
 import string
 from math import floor
 
-class url_shortener:
-    
+class url_shortener:   
     def __init__(self):
         self.redis = redis.Redis(config['redis_host'], config['redis_port'])
 

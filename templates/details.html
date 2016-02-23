@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Details{% endblock %}
+{% block body %}
+  <form class="ui form">
+  <div class="field">
+    <label>Shortened URL</label>
+    <input type="text" name="input-url" value="http://127.0.0.1:5000/{{ short_id }}">
+  <div class="field">
+    <label>Long URL</label>
+    <input type="text" value="{{ link_target }}">
+  <div class="field">
+    <label>Click Count</label>
+    <input type="text" value="{{click_count}}">
+  </div> 
+</form>
+{% endblock %}
