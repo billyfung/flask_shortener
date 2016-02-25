@@ -3,6 +3,7 @@ import redis
 import urlparse
 import string
 import os
+from werkzeug.exceptions import HTTPException, NotFound
 from math import floor
 
 app = Flask(__name__)
