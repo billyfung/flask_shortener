@@ -3,4 +3,4 @@ itsdangerous==0.24
 Jinja2==2.8
 Werkzeug==0.11.3
 redis==2.10.3
-gunicorn==19.4.5
+gunicorn
