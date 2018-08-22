@@ -3,7 +3,7 @@ Flask URL shortener
 
 Creating a URL shortener with Flask and Redis. 
 
-##Overview
+## Overview
 - User inputs URL into form
 - store URL into Redis, with assigned key
 - encode key into base 62, return that as unique short identifier
